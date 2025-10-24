@@ -31,8 +31,13 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
-          <button class="mobale-menu" type="button">
-            <svg class="mobale-menu-burger" width="24" height="24">
+          <button
+            class="burger-btn"
+            type="button"
+            aria-label="Open menu"
+            data-menu-open
+          >
+            <svg class="burger-btn-icone" width="24" height="24">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
@@ -59,6 +64,109 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- Mobile Menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <!-- btn close -->
+          <button
+            class="btn-close"
+            type="button"
+            aria-label="Close menu"
+            data-menu-close
+          >
+            <svg class="btn-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mabile-menu-nav">
+            <li class="mabile-menu-item">
+              <a class="mabile-menu-link active" href="./index.html">Studio</a>
+            </li>
+            <li class="mabile-menu-item">
+              <a class="mabile-menu-link" href="#">Portfolio</a>
+            </li>
+            <li class="mabile-menu-item">
+              <a class="mabile-menu-link" href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="mabile-contacts">
+            <ul class="mabile-menu-contacts">
+              <li class="mabile-menu-contacts-item">
+                <a class="mabile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mabile-menu-contacts-item">
+                <a
+                  class="mabile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- Mobile menu socials -->
+          <div class="mabile-menu-socials">
+            <ul class="mabile-menu-list">
+              <li class="mabile-menu-item">
+                <a
+                  class="mabile-menu-linc"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                  aria-label="link to instagram"
+                >
+                  <svg class="mabile-menu-linc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mabile-menu-item">
+                <a
+                  class="mabile-menu-linc"
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                  aria-label="link to twitter"
+                >
+                  <svg class="mabile-menu-linc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mabile-menu-item">
+                <a
+                  class="mabile-menu-linc"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                  aria-label="link to facebook"
+                >
+                  <svg class="mabile-menu-linc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mabile-menu-item">
+                <a
+                  class="mabile-menu-linc"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener no-referrer"
+                  aria-label="link to linkedin"
+                >
+                  <svg class="mabile-menu-linc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -630,8 +738,13 @@
     <!-- Modal -->
     <div class="backdrop none" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button" data-modal-close>
-          <svg class="modal-btn-icon" width="8" height="8">
+        <button
+          class="btn-close"
+          type="button"
+          aria-label="Close menu"
+          data-modal-close
+        >
+          <svg class="btn-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -716,7 +829,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
