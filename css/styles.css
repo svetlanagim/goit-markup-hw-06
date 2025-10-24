@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.none {
+    display: none;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -46,9 +50,27 @@ body:has(.backdrop.is-open) {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+
+
+    outline: 1px solid #2e2f42;
+    outline-offset: -2px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+
+    }
 }
 
 .section {
@@ -107,6 +129,8 @@ body:has(.backdrop.is-open) {
 .header-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo {
@@ -120,18 +144,67 @@ body:has(.backdrop.is-open) {
 }
 
 .header-logo {
-    padding: 24px 0;
-    margin-right: 76px;
+    padding: 16px 0;
 }
+
+@media screen and (min-width:768px) {
+    .header-logo {
+        padding: 24px 0;
+        margin-right: 120px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .header-logo {
+        margin-right: 76px;
+    }
+}
+
 
 .header-logo .logo-part {
     color: #2e2f42;
 }
 
-.nav-list {
+/* Mobale Menu */
+.mobale-menu {
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.mobale-menu-burger {
+    stroke: #2f2f37;
+}
+
+@media not (hover: hover) {
+    .mobale-menu:active .mobale-menu-burger {
+        stroke: #404bbf;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobale-menu {
+        display: none;
+    }
+}
+
+/* Nav */
+.nav-list {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
 .nav-item {}
@@ -168,15 +241,22 @@ body:has(.backdrop.is-open) {
     color: #404bbf;
 }
 
+/* contacts */
 .contacts {
     font-style: normal;
     margin-left: auto;
 }
 
 .contacts-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
 .contacts-item {}

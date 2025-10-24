@@ -31,6 +31,12 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
+          <button class="mobale-menu" type="button">
+            <svg class="mobale-menu-burger" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Studio</a>
@@ -58,7 +64,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section class="hero none" style="display: none">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button" data-modal-open>
@@ -68,7 +74,7 @@
       </section>
 
       <!-- About -->
-      <section class="about section">
+      <section class="about section none">
         <div class="container">
           <h2 class="section-title visually-hidden">About</h2>
           <ul class="about-list">
@@ -125,7 +131,7 @@
       </section>
 
       <!-- Our Team -->
-      <section class="team section">
+      <section class="team section none">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -402,7 +408,7 @@
       </section>
 
       <!-- Our Portfolio -->
-      <section class="portfolio section">
+      <section class="portfolio section none">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -527,7 +533,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container footer-container">
         <div class="footer-container-logo">
           <a class="logo footer-logo" href="./index.html"
@@ -622,7 +628,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop none" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
