@@ -910,7 +910,7 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     visibility: visible;
     pointer-events: initial;
     transition-delay: 0ms;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .mobile-menu-container {
@@ -942,9 +942,9 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     margin-bottom: auto;
 }
 
-.mabile-menu-item {}
+.mabile-menu-nav-item {}
 
-.mabile-menu-link {
+.mabile-menu-nav-link {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -952,11 +952,9 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     color: #2e2f42;
 }
 
-.mabile-menu-link.active {
+.mabile-menu-nav-link.active {
     color: #404bbf
 }
-
-.active {}
 
 .mabile-contacts {
     font-style: normal;
@@ -1015,20 +1013,6 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
 
 /* #endregion mobile Menu*/
 
-.footer-list {}
-
-.footer-item {}
-
-.footer-linc {}
-
-.footer-linc:hover,
-.footer-linc:focus {
-    background-color: #31d0aa;
-}
-
-.footer-linc-icon {
-    fill: #f4f4fd;
-}
 
 /* #region */
 /* #endregion*/
