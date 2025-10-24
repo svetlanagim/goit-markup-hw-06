@@ -867,17 +867,19 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     padding: 16px 0;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+}
+
+.burger-btn:active .burger-btn-icone,
+.burger-btn:hover .burger-btn-icone {
+    stroke: #404bbf;
 }
 
 .burger-btn-icone {
     stroke: #2f2f37;
 }
 
-@media not (hover: hover) {
-    .burger-btn:active .burger-btn-iconer {
-        stroke: #404bbf;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .burger-btn {
@@ -908,6 +910,7 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     visibility: visible;
     pointer-events: initial;
     transition-delay: 0ms;
+    overflow-y: scroll;
 }
 
 .mobile-menu-container {
@@ -924,9 +927,9 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
 }
 
 
-.mobile-menu .btn-close:active {
+.mobile-menu .btn-close:active,
+.mobile-menu .btn-close:hover {
     background-color: #404bbf;
-    color: #2e2f42;
     border: none;
 }
 
@@ -963,7 +966,7 @@ input[type='checkbox']:checked+.agreement-wrapper>.agreement-checkbox {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 48px;
+    margin: 24px 0 48px;
 }
 
 .mabile-menu-contacts-item {}
