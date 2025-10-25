@@ -68,8 +68,8 @@ body:has(.backdrop.is-open) {
 
 @media screen and (min-width: 1158px) {
     .container {
-        min-width: 1158px;
-        /* max-width: 1158px; */
+        /* min-width: 1158px; */
+        max-width: 1158px;
         padding: 0 15px;
         margin: 0 auto;
     }
@@ -333,14 +333,14 @@ body:has(.backdrop.is-open) {
 
 @media only screen and (min-width: 768px) {
     .hero {
-        min-width: 768px;
+        /* min-width: 768px; */
         padding: 112px 0;
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .hero {
-        min-width: 1440px;
+        max-width: 1440px;
         padding: 188px 0;
     }
 }
@@ -404,6 +404,7 @@ body:has(.backdrop.is-open) {
 
 @media only screen and (min-width: 768px) {
     .about-list {
+        justify-content: space-between;
         gap: 72px 24px;
     }
 }
@@ -608,13 +609,27 @@ body:has(.backdrop.is-open) {
 
 .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    gap: 48px;
     flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 1158px) {
+    .portfolio-list {
+        display: flex;
+        gap: 48px 24px;
+        flex-wrap: wrap;
+    }
+
+}
+
 .portfolio-item {
-    width: calc((100% - 24px * 2) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 1158px) {
+    .portfolio-item {
+        width: calc((100% - 24px * 2) / 3);
+    }
 }
 
 .portfolio-item:hover {
@@ -670,8 +685,6 @@ body:has(.backdrop.is-open) {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
-
-    /* line-height: 24px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
