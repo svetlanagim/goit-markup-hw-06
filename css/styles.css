@@ -318,7 +318,7 @@ body:has(.backdrop.is-open) {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/bg_people-office.jpg);
+        url(../images/background/bg-mob-min.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -329,17 +329,55 @@ body:has(.backdrop.is-open) {
     padding: 72px 0;
 }
 
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background/bg-mob@2x-min.jpg);
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background/bg-tab-min.jpg);
         /* min-width: 768px; */
         padding: 112px 0;
     }
 }
 
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background/bg-tab@2x-min.jpg);
+    }
+}
+
 @media only screen and (min-width: 1158px) {
     .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background/bg-desc-min.jpg);
         max-width: 1440px;
         padding: 188px 0;
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+only screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/background/bg-desc@2x-min.jpg);
     }
 }
 
@@ -621,20 +659,18 @@ body:has(.backdrop.is-open) {
         flex-direction: row;
         justify-content: space-between;
     }
-
 }
 
 @media only screen and (min-width: 1158px) {
     .portfolio-list {
         gap: 48px 24px;
     }
-
 }
 
 .portfolio-item {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -643,7 +679,6 @@ body:has(.backdrop.is-open) {
     .portfolio-item {
         /* width: 356px; */
         width: calc((100% - 24px * 1) / 2);
-
     }
 }
 
@@ -735,9 +770,16 @@ body:has(.backdrop.is-open) {
 
 }
 
+/* @media only screen and (min-width: 768px) and (max-width: 1158px) {
+    .footer-container {
+        padding: 0 108px;
+    }
+} */
+
 @media only screen and (min-width: 768px) {
     .footer-container {
         flex-direction: row;
+        align-items: baseline;
         padding: 0 108px;
         gap: 72px 24px;
     }
@@ -745,7 +787,6 @@ body:has(.backdrop.is-open) {
 
 @media only screen and (min-width: 1158px) {
     .footer-container {
-        align-items: baseline;
         padding: 0 15px;
         gap: 0;
     }
